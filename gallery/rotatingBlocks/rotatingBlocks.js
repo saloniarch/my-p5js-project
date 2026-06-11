@@ -1,4 +1,4 @@
-const rotatingSquaresSketch = (p) => {
+const rotatingBlocksSketch = (p) => {
   let distMouse = 50;
   let cols, rows;
   let size = 10;
@@ -7,7 +7,7 @@ const rotatingSquaresSketch = (p) => {
   let Block;
 
   p.setup = () => {
-    p.createCanvas(600, 600).parent("rotating-squares");
+    p.createCanvas(600, 600).parent("rotating-blocks");
     p.rectMode(p.CENTER);
     p.angleMode(p.DEGREES);
 
@@ -41,4 +41,4 @@ const rotatingSquaresSketch = (p) => {
   };
 };
 
-new p5(rotatingSquaresSketch);
+new p5(rotatingBlocksSketch);

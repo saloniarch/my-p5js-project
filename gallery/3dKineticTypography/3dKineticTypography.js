@@ -1,4 +1,4 @@
-const movingLetterSketch = (p) => {
+const KineticTypographySketch = (p) => {
   let size = 55;
   let rows;
   let cols;
@@ -10,7 +10,7 @@ const movingLetterSketch = (p) => {
   let fontY = 3.9;
 
   p.setup = async () => {
-    p.createCanvas(600, 600, p.WEBGL).parent("moving-letter");
+    p.createCanvas(600, 600, p.WEBGL).parent("3d-kinetic-typography");
     p.angleMode(p.DEGREES);
 
     Box = createBoxClass(p);
@@ -60,4 +60,4 @@ const movingLetterSketch = (p) => {
     }
   };
 };
-new p5(movingLetterSketch);
+new p5(KineticTypographySketch);

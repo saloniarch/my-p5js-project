@@ -1,0 +1,23 @@
+const HypnoticFlowerSketch = (p) => {
+  let x = [];
+  let y = [];
+  let pts = 10;
+  let r = 100;
+
+  p.setup = () => {
+    p.createCanvas(600, 600).parent("hypnotic-flower");
+    p.angleMode(p.DEGREES);
+  };
+
+  p.draw = () => {
+    p.background(255);
+
+    let angle = (i / pts) * 360;
+    for (let i = 0; i < pts; i++) {
+      x[i] = r * p.cos(angle);
+      y[i] = r * p.sin(angle);
+    }
+  };
+};
+
+new p5(HypnoticFlowerSketch);

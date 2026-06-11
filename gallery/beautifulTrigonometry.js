@@ -1,4 +1,4 @@
-const circlesSketch = (p) => {
+const beautifulTrigonometrySketch = (p) => {
   // Outer circle parameters
   let angle = 0;
   let r = 150;
@@ -12,7 +12,7 @@ const circlesSketch = (p) => {
   let y2 = [];
 
   p.setup = () => {
-    p.createCanvas(600, 600).parent("circles");
+    p.createCanvas(600, 600).parent("beautiful-trigonometry");
     p.angleMode(p.DEGREES);
 
     // Pre-calculate shifting angles for each axis
@@ -66,4 +66,4 @@ const circlesSketch = (p) => {
   };
 };
 
-new p5(circlesSketch);
+new p5(beautifulTrigonometrySketch);
